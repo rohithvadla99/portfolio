@@ -1,0 +1,37 @@
+[
+  {
+    "title":"Churn Prediction Plan",
+    "short":"End-to-end ML app predicting customer churn with interactive Streamlit dashboard.",
+    "long":"<p>The Customer Churn Prediction System is an end-to-end machine learning project designed to identify customers likely to cancel subscriptions or stop using a service. The system uses the Telco Customer dataset (~7,000 records) and performs comprehensive data cleaning, feature engineering, and one-hot encoding to prepare high-quality structured inputs.</p><br><p>A Random Forest classifier is trained and optimized, achieving strong predictive performance with ROC-AUC &gt; 0.80. Feature importance analysis identifies key churn drivers, including contract type, tenure, and monthly charges, providing actionable insights for business retention strategies.</p><br><p>The interactive Streamlit dashboard with Plotly visualizations allows users to explore churn patterns across customer segments, such as contract type, payment method, and tenure. The system also incorporates a real-time prediction tool, enabling business users to input customer details and instantly assess churn probability. This combination of predictive modeling, interpretability, and interactive visualization helps reduce revenue loss and support proactive customer retention.</p><br><p><strong>Skills:</strong> Python, scikit-learn, Random Forest, Feature Engineering, Data Cleaning &amp; Preprocessing, One-Hot Encoding, ROC-AUC Evaluation, Streamlit, Plotly, Data Visualization, Interactive Dashboards, Real-Time Prediction Tool, Deployment.</p>",
+    "tags":["machine learning", "streamlit", "data science", "visualization", "python"],
+    "images":["assets/map-1.png"],
+    "project_link":"https://rv99-customer-churn-prediction.streamlit.app/",
+    "link":"https://github.com/rohithvadla99/customer-churn-prediction"
+  },
+  {
+    "title":"Reinforcement Learning Game Bot",
+    "short":"DQN-based agent trained to autonomously play CartPole-v1.",
+    "long":"<p>The Reinforcement Learning Game Bot is designed to autonomously train an agent to master gameplay in environments such as CartPole-v1 using PyTorch and OpenAI Gym. The system initializes the environment, observes state variables like position, velocity, and angle, and selects actions through a Deep Q-Network (DQN) enhanced with experience replay and an epsilon-greedy exploration strategy. Each training episode updates the Q-network using the Bellman equation, enabling stable convergence and efficient policy learning.</p><br><p>Training progress is visualized through reward-vs-episode plots and interactive GIF animations, providing real-time insights into the agent’s learning behavior. Users can interact with the trained agent via a Streamlit dashboard, which allows monitoring of agent performance and evaluation of training outcomes.</p><br><p>Optional enhancements include implementing alternative RL algorithms such as PPO or A2C, and deploying the agent in an interactive interface for direct user engagement. This project demonstrates proficiency in reinforcement learning, neural network training, environment interaction, and interactive visualization, while providing a clear, interpretable view of agent performance over time.</p><br><p><strong>Skills:</strong> Python, PyTorch, Gymnasium/OpenAI Gym, Deep Q-Network (DQN), Reinforcement Learning, Experience Replay, Epsilon-Greedy Policy, Bellman Equation, Neural Network Training, Model Evaluation, NumPy, matplotlib, GIF Animation, Streamlit, ImageIO/PIL, Full-Stack Application Development, Interactive Dashboard Design.</p>",
+    "tags":["reinforcement-learning", "pytorch", "gym", "streamlit", "ai"],
+    "images":["assets/chat-1.png"],
+    "project_link":"https://rv99-dqn-cartpole.streamlit.app/",
+    "link":"https://github.com/rohithvadla99/dqn-cartpole"
+  },
+  {
+  "title": "Personalized News Summarizer",
+  "short": "Streamlit app for automated news summarization, sentiment analysis, and personalized recommendations.",
+  "long": "<p>The Personalized News Summarizer is a full-stack, end-to-end NLP project designed to automate the process of reading, understanding, and discovering news content. The system fetches news articles from multiple sources such as NewsAPI and RSS feeds, then stores them in a structured SQLite database for efficient querying and retrieval. Each article undergoes preprocessing to clean the text, removing HTML tags, special characters, and unnecessary whitespace.</p><br><p>Using HuggingFace Transformers (BART/T5), the app generates concise summaries for each article, while DistilBERT or other sentiment analysis models provide polarity scores and sentiment labels. For personalized content delivery, the system employs Sentence-BERT embeddings to compute content similarity and recommend articles aligned with a user’s reading history and sentiment preferences.</p><br><p>The interactive Streamlit dashboard allows users to select topics, view article summaries, and analyze sentiment trends in a visually intuitive interface. This combination of summarization, sentiment scoring, and personalized recommendation significantly reduces reading time, improves content relevance, and enhances user engagement.</p><br><p><strong>Skills:</strong> Python, NLP, HuggingFace Transformers, Sentence-BERT, DistilBERT, Text Preprocessing, SQLite, Streamlit, API Integration, Data Engineering, Recommendation Systems, Data Visualization, Full-Stack Application Development, Deployment Automation.</p>",
+  "tags": [
+    "nlp",
+    "transformers",
+    "streamlit",
+    "recommendation-system"
+  ],
+  "images": [
+    "assets/news-1.png"
+  ],
+  "project_link":"https://rv99-pns.streamlit.app/",
+  "link": "https://github.com/rohithvadla99/personalized-news-summarizer"
+}
+
+]
