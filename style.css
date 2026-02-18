@@ -132,6 +132,11 @@ html { scroll-behavior: smooth; }
   text-align: center;
 }
 
+.cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* optional spacing */
+}
 
 /* Responsive */
 @media (max-width:768px){ .hero h1{font-size:2.2rem;} }
