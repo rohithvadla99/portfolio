@@ -7,7 +7,7 @@
   "images": ["assets/ai-reliability-layer.png"],
   "project_link": "https://ai-reliability-layer.up.railway.app",
   "link": "https://github.com/rohithvadla99/Ai-reliability-layer"
-  }
+  },
   {
     "title":"Churn Prediction Plan",
     "short":"End-to-end ML app predicting customer churn with interactive Streamlit dashboard.",
