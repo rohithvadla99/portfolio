@@ -1,4 +1,3 @@
-/* ─── Aurora / Particle Background Canvas ────────────────── */
 (function () {
   const canvas = document.getElementById('bg-canvas');
   const ctx = canvas.getContext('2d');
@@ -71,7 +70,6 @@
 })();
 
 
-/* ─── Typing Animation ────────────────────────────────────── */
 const TYPING = ["build ML models.", "write code.", "do random stuff.", "love data."];
 const typingEl = document.querySelector(".typing");
 let tIdx = 0, cIdx = 0, forward = true;
