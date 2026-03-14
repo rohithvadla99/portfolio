@@ -10,7 +10,6 @@
 </head>
 <body>
 
-  <!-- Animated background canvas -->
   <canvas id="bg-canvas"></canvas>
 
   <!-- Navigation -->
@@ -42,7 +41,7 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
       <p class="hero-eyebrow">Hello, world </p>
@@ -114,9 +113,7 @@
   <section class="section" id="projects">
     <div class="section-label">03 / Projects</div>
     <h2 class="section-title">What I've Built</h2>
-    <div class="grid" id="projects-grid">
-      <!-- dynamically injected -->
-    </div>
+    <div class="grid" id="projects-grid"></div>
   </section>
 
   <!-- Project Detail -->
@@ -211,6 +208,42 @@
       <h2>Want the full picture?</h2>
       <p>Download my resume to see my complete experience and credentials.</p>
       <a href="assets/KSRV_RESUME.pdf" download class="cta-primary">Download Resume ↓</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-label">06 / Contact</div>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-form reveal">
+      <!--
+        SETUP: Replace YOUR_FORM_ID below with your Formspree form ID.
+        1. Go to https://formspree.io and sign up (free)
+        2. Create a new form — it gives you an ID like "xpzgkwqr"
+        3. Replace YOUR_FORM_ID with that ID
+      -->
+      <form id="contact-form" action="https://formspree.io/f/mojklyja" method="POST">
+        <div class="contact-grid">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group full">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+          </div>
+          <div class="form-group full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
     </div>
   </section>
 
