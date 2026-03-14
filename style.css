@@ -583,7 +583,6 @@ body {
   z-index: 1;
 }
 
-/* ─── Reveal Animations ─────────────────────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -594,7 +593,6 @@ body {
   transform: translateY(0);
 }
 
-/* ─── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .site-header { padding: 1rem 1.5rem; }
   .section { padding: 4rem 1.25rem; }
