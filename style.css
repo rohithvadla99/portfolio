@@ -539,6 +539,63 @@ body {
   color: var(--accent);
 }
 
+/* ─── Certifications ────────────────────────────────────────── */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cert-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.2rem 1.6rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(12px);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  text-decoration: none;
+}
+.cert-row:hover {
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
+  transform: translateX(4px);
+}
+
+.cert-info { display: flex; flex-direction: column; gap: 0.15rem; }
+
+.cert-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cert-issuer {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.cert-link {
+  font-size: 0.78rem;
+  color: var(--accent);
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.cert-row:hover .cert-link { opacity: 1; }
+
+@media (max-width: 500px) {
+  .cert-row { flex-direction: column; align-items: flex-start; }
+}
+
 /* ─── Contact Form ──────────────────────────────────────────── */
 .contact-grid {
   display: grid;
