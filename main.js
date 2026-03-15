@@ -175,6 +175,14 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('projects-grid').innerHTML =
         '<p style="color:var(--text-muted)">Could not load projects.</p>';
     });
+
+  fetch('certifications.json')
+    .then(r => r.json())
+    .then(populateCertifications)
+    .catch(() => {
+      const el = document.getElementById('cert-list');
+      if (el) el.innerHTML = '<p style="color:var(--text-muted)">Could not load certifications.</p>';
+    });
 });
 
 function populateProjects(projects) {
@@ -196,6 +204,36 @@ function populateProjects(projects) {
     card.addEventListener('mouseleave', () => { card.style.transform = ''; });
     grid.appendChild(card);
     setTimeout(() => observer.observe(card), i * 80);
+  });
+}
+
+function populateCertifications(certs) {
+  const list = document.getElementById('cert-list');
+  if (!list) return;
+  list.innerHTML = '';
+
+  certs.forEach((cert, i) => {
+    const row = document.createElement('a');
+    row.className = 'cert-row reveal';
+    row.href = cert.url;
+    row.target = '_blank';
+    row.rel = 'noopener noreferrer';
+    row.innerHTML = `
+      <div class="cert-info">
+        <span class="cert-title">${cert.title}</span>
+        <span class="cert-issuer">${cert.issuer}</span>
+      </div>
+      <span class="cert-link">
+        View Certificate
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </span>
+    `;
+    list.appendChild(row);
+    setTimeout(() => observer.observe(row), i * 80);
   });
 }
 
