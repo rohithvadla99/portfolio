@@ -7,7 +7,7 @@
   "images": ["assets/fintrack.png"],
   "project_link": "https://rohithvadla99.github.io/FinTrack/",
   "link": "https://github.com/rohithvadla99/FinTrack"
-  }
+  },
   {
   "title": "AI Reliability Layer",
   "short": "Production-deployed AI middleware routing prompts across 4 providers with retries, error classification, and a live operations dashboard.",
